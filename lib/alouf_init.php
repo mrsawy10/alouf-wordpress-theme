@@ -119,11 +119,20 @@ function custom_theme_options_menu()
     add_submenu_page(
         'custom-theme-options',
         'Home options',
-        'HomePage Options',
+        'Home Page Options',
         'manage_options',
         'home-page-content',
         'home_page_content_callback',
         3
+    );
+    add_submenu_page(
+        'custom-theme-options',
+        'About options',
+        'About Page Options',
+        'manage_options',
+        'about-page-content',
+        'about_page_content_callback',
+        4
     );
 }
 add_action('admin_menu', 'custom_theme_options_menu');
@@ -131,3 +140,4 @@ add_action('admin_menu', 'custom_theme_options_menu');
 require_once(alouf_ROOT . 'lib/alouf_taxonomy_terms.php');
 require_once(alouf_ROOT . 'theme options/theme_opptions.php');
 require_once(alouf_ROOT . 'theme options/home_page_options.php');
+require_once(alouf_ROOT . 'theme options/about_page_options.php');

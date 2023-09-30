@@ -30,44 +30,24 @@ function custom_theme_options_page()
             <div class="col-sm-3 col-md-3 col-lg-3 pl-0">
 
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
                     <a class="nav-link   active" id="v-pills-firstsection-tab" data-toggle="pill" href="#v-pills-firstsection" role="tab" aria-controls="v-pills-firstsection" aria-selected="true">Logos</a>
-
                     <a class="nav-link  " id="v-pills-secondsection-tab" data-toggle="pill" href="#v-pills-secondsection" role="tab" aria-controls="v-pills-secondsection" aria-selected="false">Contact Us </a>
-
                     <a class="nav-link  " id="v-pills-thirdsection-tab" data-toggle="pill" href="#v-pills-thirdsection" role="tab" aria-controls="v-pills-thirdsection" aria-selected="false">Social Media</a>
-
                     <a class="nav-link  " id="v-pills-fourthsection-tab" data-toggle="pill" href="#v-pills-fourthsection" role="tab" aria-controls="v-pills-fourthsection" aria-selected="false">Colors </a>
-
                     <a class="nav-link  " id="v-pills-fifthsection-tab" data-toggle="pill" href="#v-pills-fifthsection" role="tab" aria-controls="v-pills-fifthsection" aria-selected="false">Footer </a>
-
                     <a class="nav-link  " id="v-pills-sixthsection-tab" data-toggle="pill" href="#v-pills-sixthsection" role="tab" aria-controls="v-pills-sixthsection" aria-selected="false">General </a>
-
                 </div>
-
             </div>
-
             <div class="col-sm-9 col-md-9 col-lg-9 gray_back pl-0">
-
                 <form class="form-horizontal" method="post" action="#">
-
                     <div class="tab-content" id="v-pills-tabContent">
-
-
                         <div class="tab-pane fade show active" id="v-pills-firstsection" role="tabpanel" aria-labelledby="v-pills-firstsection-tab">
-
                             <div class="form-group">
-
                                 <label for="alouf_logo_img" class="col-sm-12   control-label   text-white">Logo</label>
-
                                 <div class="col-sm-12  ">
-
                                     <input class="second_img_url alouf_half" type="text" name="alouf_logo_img" size="60" value="<?php echo get_option('alouf_logo_img'); ?>">
-
                                     <a href="#" class="second_img_upload btn btn-info">Choose </a>
-
                                     <img class="second_img rounded img-fluid" src="<?php echo get_option('alouf_logo_img'); ?>" height="auto" style="max-width:20%" />
-
                                 </div>
 
                             </div>
